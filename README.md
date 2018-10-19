@@ -1,0 +1,2 @@
+# selfdictionary
+Personal mulltilanguage dictionary
