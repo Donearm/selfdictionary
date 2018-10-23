@@ -98,7 +98,17 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  text-align: center;
+  color: #eeeeee;
+  background-color: #ccccc;
+}
 
 
 
