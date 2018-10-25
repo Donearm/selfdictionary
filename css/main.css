@@ -122,7 +122,23 @@ textarea {
 
 #englishbtn {
 	border-color: #951818;
-	text-color: #951818;
+	color: #951818;
+}
+#spanishbtn {
+    border-color: #d8e703;
+    color: #951818;
+}
+#portuguesebtn {
+    border-color: #6d2117;
+    color: #143303;
+}
+#germanbtn {
+    border-color: #000000;
+    color: #caa603;
+}
+#polishbtn {
+    border-color: #951818;
+    color: #ffffff;
 }
 
 
