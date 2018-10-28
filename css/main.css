@@ -123,24 +123,34 @@ textarea {
 /* Button styling */
 
 #englishbtn {
-	border-color: #951818;
-	color: #951818;
+	border-color: #ff0000;
+	background-color: #ffffff;
+	color: #ff0000;
+	text-shadow: 0.5px 0.5px red;
 }
 #spanishbtn {
-    border-color: #951818;
-    color: #d8e703;
+    border-color: #aa151b;
+	background-color: #F1BF00;
+    color: #aa151b;
+	text-shadow: 0.5px 0.5px red;
 }
 #portuguesebtn {
-    border-color: #6d2117;
-    color: #143303;
+    border-color: #ff0000;
+	background-color: #006600;
+    color: #ff0000;
+	text-shadow: 0.5px 0.5px red;
 }
 #germanbtn {
-    border-color: #000000;
-    color: #caa603;
+    border-color: #ffcc00;
+	background-color: #ff0000;
+    color: #000000;
+	text-shadow: 0.5px 0.5px black;
 }
 #polishbtn {
-    border-color: #951818;
+    border-color: #ff0000;
+	background-color: #ff0000;
     color: #ffffff;
+	text-shadow: 0.5px 0.5px white;
 }
 
 
