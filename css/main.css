@@ -11,8 +11,8 @@
    ========================================================================== */
 
 html {
-    color: #eeeeee;
-	background-color: #134450;
+    color: #134450;
+	background-color: #eeeeee;
     font-size: 1em;
     line-height: 1.4;
 }
@@ -113,9 +113,11 @@ textarea {
 .left-column {
 	background-color: #eeeeee;
 }
+.center-column { }
 
-.center-column {
-	background-color: #134450;
+/* Content styling */
+#maintitle {
+	padding: 0.8em 0 0.8em 0.4em;
 }
 
 /* Button styling */
@@ -125,8 +127,8 @@ textarea {
 	color: #951818;
 }
 #spanishbtn {
-    border-color: #d8e703;
-    color: #951818;
+    border-color: #951818;
+    color: #d8e703;
 }
 #portuguesebtn {
     border-color: #6d2117;
