@@ -10,7 +10,7 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
+html, body {
     color: #134450;
 	background-color: #eeeeee;
     font-size: 1em;
@@ -111,7 +111,6 @@ textarea {
 }
 
 .left-column {
-	background-color: #eeeeee;
 }
 .center-column { }
 
