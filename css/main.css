@@ -121,6 +121,10 @@ textarea {
 
 /* Button styling */
 
+#buttons {
+	margin-top: 0.6em;
+	margin-bottom: 0.6em;
+}
 #englishbtn {
 	border-color: #ff0000;
 	background-color: #ffffff;
