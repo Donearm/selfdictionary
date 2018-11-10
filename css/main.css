@@ -129,31 +129,31 @@ textarea {
 	background-color: #134450;
 	color: #fefdf7;
 }
-#englishbtn:hover, #englishbtn:active {
+#englishbtn:hover, #englishbtn:focus {
 	border-color: #ff0000;
 	background-color: #fefdf7;
 	color: #ff0000;
 	text-shadow: 0.5px 0.5px red;
 }
-#spanishbtn:hover, #spanishbtn:active {
+#spanishbtn:hover, #spanishbtn:focus {
     border-color: #aa151b;
 	background-color: #F1BF00;
     color: #aa151b;
 	text-shadow: 0.5px 0.5px red;
 }
-#portuguesebtn:hover, #portuguesebtn:active {
+#portuguesebtn:hover, #portuguesebtn:focus {
     border-color: #ff0000;
 	background-color: #006600;
     color: #ff0000;
 	text-shadow: 0.5px 0.5px red;
 }
-#germanbtn:hover, #germanbtn:active {
+#germanbtn:hover, #germanbtn:focus {
     border-color: #ffcc00;
 	background-color: #ff0000;
     color: #000000;
 	text-shadow: 0.5px 0.5px black;
 }
-#polishbtn:hover, #polishbtn:active {
+#polishbtn:hover, #polishbtn:focus {
     border-color: #ff0000;
 	background-color: #ff0000;
     color: #fefdf7;
