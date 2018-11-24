@@ -111,6 +111,7 @@ textarea {
   height: 60px;
   line-height: 60px; /* Vertically center the text there */
   text-align: center;
+  font-size: 85%;
   color: #fefdf7;
   background-color: #134450;
   background-image: url("../img/noise_pattern.png");
