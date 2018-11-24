@@ -108,6 +108,8 @@ textarea {
   text-align: center;
   color: #fefdf7;
   background-color: #134450;
+  background-image: url("../img/noise_pattern.png");
+  background-repeat: repeat;
 }
 
 .left-column {
