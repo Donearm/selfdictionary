@@ -15,6 +15,11 @@ html, body {
 	background-color: #fefdff;
     font-size: 1em;
     line-height: 1.4;
+	background: url("../img/focus.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 /*
