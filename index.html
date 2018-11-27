@@ -57,13 +57,15 @@
     <div class="row" id="searchrow">
       <div class="col-lg-4 left-column"></div>
       <div class="col center-column input-group">
-        <input type="text" class="form-control input-lg" 
-                           placeholder="Search a word"
-                           aria-label="Search a word" />
-        <div class="input-group-append">
-          <button class="btn btn-secondary" type="button" 
-                                            id="searchbtn">Search</button>
-        </div>
+        <form action="/lookup" method="POST">
+          <input type="text" class="form-control input-lg" 
+                             placeholder="Search a word"
+                             aria-label="Search a word" />
+          <div class="input-group-append">
+            <button class="btn btn-secondary" type="button" 
+                                              id="searchbtn">Search</button>
+          </div>
+        </form>
       </div>
     </div>
     <!-- content row -->
