@@ -13,8 +13,14 @@
 html, body {
     color: #134450;
 	background-color: #fefdff;
-    font-size: 1em;
+	font: 400 'Pacifico', Helvetica, sans-serif;
+    font-size: 13pt;
     line-height: 1.4;
+	background: url("../img/focus.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 /*
@@ -99,18 +105,22 @@ textarea {
    ========================================================================== */
 
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
   line-height: 60px; /* Vertically center the text there */
   text-align: center;
+  font-size: 80%;
   color: #fefdf7;
   background-color: #134450;
+  background-image: url("../img/noise_pattern.png");
+  background-repeat: repeat;
 }
 
 .left-column {
+	font-size: 85%;
 }
 .center-column { }
 
@@ -129,31 +139,31 @@ textarea {
 	background-color: #134450;
 	color: #fefdf7;
 }
-#englishbtn:hover, #englishbtn:active {
+#englishbtn:hover, #englishbtn:focus {
 	border-color: #ff0000;
 	background-color: #fefdf7;
 	color: #ff0000;
 	text-shadow: 0.5px 0.5px red;
 }
-#spanishbtn:hover, #spanishbtn:active {
+#spanishbtn:hover, #spanishbtn:focus {
     border-color: #aa151b;
 	background-color: #F1BF00;
     color: #aa151b;
 	text-shadow: 0.5px 0.5px red;
 }
-#portuguesebtn:hover, #portuguesebtn:active {
+#portuguesebtn:hover, #portuguesebtn:focus {
     border-color: #ff0000;
 	background-color: #006600;
     color: #ff0000;
 	text-shadow: 0.5px 0.5px red;
 }
-#germanbtn:hover, #germanbtn:active {
+#germanbtn:hover, #germanbtn:focus {
     border-color: #ffcc00;
 	background-color: #ff0000;
     color: #000000;
 	text-shadow: 0.5px 0.5px black;
 }
-#polishbtn:hover, #polishbtn:active {
+#polishbtn:hover, #polishbtn:focus {
     border-color: #ff0000;
 	background-color: #ff0000;
     color: #fefdf7;
