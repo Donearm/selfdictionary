@@ -3,7 +3,18 @@ const bodyParser = require("body-parser");
 const app = express();
 const MongoClient = require("mongodb").MongoClient
 
-const dburl = "mongodb://localhost/Dictionary";
+const config = require('./config');
+
+// Establish a mongodb connection using settings from the config.js file
+const dburl = `mongodb://${config.db.host}/${config.db.name}`;
+
+MongoClient.connect(dburl, {useNewUrlParser: true})
+	.then((db) => {
+		console.log("Connected to db!");
+	})
+	.catch((err) => {
+		throw err;
+	});
 
 app.listen(8888, function() {
 	console.log("Listening on http://localhost:8888");
