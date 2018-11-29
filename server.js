@@ -1,20 +1,23 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
-const MongoClient = require("mongodb").MongoClient
+const mongo = require('mongodb');
+
+const MongoClient = require("mongodb").MongoClient;
+let db;
 
 const config = require('./config');
 
 // Establish a mongodb connection using settings from the config.js file
 const dburl = `mongodb://${config.db.host}/${config.db.name}`;
 
-MongoClient.connect(dburl, {useNewUrlParser: true})
-	.then((db) => {
-		console.log("Connected to db!");
-	})
-	.catch((err) => {
-		throw err;
-	});
+MongoClient.connect(dburl, { useNewUrlParser: true }, function(err, database) {
+	if (err) return console.error(err);
+
+	console.log("Connection to DB done");
+	db = database;
+});
+
 
 app.listen(8888, function() {
 	console.log("Listening on http://localhost:8888");
