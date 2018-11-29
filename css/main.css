@@ -11,8 +11,8 @@
    ========================================================================== */
 
 html, body {
-    color: #134450;
-	background-color: #fefdff;
+    background-color: #134450;
+	color: #fefdff;
 	font: 400 'Pacifico', Helvetica, sans-serif;
     font-size: 13pt;
     line-height: 1.4;
@@ -119,25 +119,35 @@ textarea {
   background-repeat: repeat;
 }
 
+#firstrow {
+  background-color: #134450;
+}
+#secondrow {
+  background-color: #134450;
+}
+#contentrow {
+	margin: 1em 0 0 0;
+	color: #134450;
+}
+
 .left-column {
 	font-size: 85%;
 }
 .center-column { }
 
 /* Content styling */
-#maintitle {
-	padding: 0.8em 0 0.8em 0.4em;
-}
 
+#maintitle {
+	padding-top: 10px;
+}
 /* Button styling */
 
 #buttons {
-	margin-top: 0.6em;
-	margin-bottom: 0.6em;
+	margin-top: 20px;
 }
 #englishbtn, #spanishbtn, #portuguesebtn, #germanbtn, #polishbtn {
-	background-color: #134450;
-	color: #fefdf7;
+	color: #134450;
+	background-color: #fefdf7;
 }
 #englishbtn:hover, #englishbtn:focus {
 	border-color: #ff0000;
@@ -170,14 +180,16 @@ textarea {
 	text-shadow: 0.5px 0.5px white;
 }
 
-#searchrow {
-	margin-top: 1em;
-	margin-bottom: 1em;
-}
 #searchbtn {
+	color: #134450;
+	background-color: #fefdf7;
+}
+#searchbtn:hover, #searchbtn:focus {
+    border-color: #fefdf7;
 	background-color: #134450;
 	color: #fefdf7;
-}
+	
+
 
 
 

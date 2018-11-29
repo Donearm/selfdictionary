@@ -21,25 +21,11 @@
 
   <!-- Add your site or application content here -->
   <main role="main" class="container-fluid">
-    <!-- Title row -->
-    <div class="row">
+    <!-- Title/Buttons row -->
+    <div class="row" id="firstrow">
       <div class="col-lg-3 left-column">
         <h1 id="maintitle">Selfdictionary</h1>
       </div>
-    <div class="col center-column"></div>
-    </div>
-    <!-- subtitle row -->
-    <div class="row">
-      <div class="col-lg-3 left-column">
-        <h5>A multi-language dictionary</h5>
-      </div>
-      <div class="col center-column">
-        <h4>Pick the language you are translating</h4>
-      </div>
-    </div>
-    <!-- buttons row -->
-    <div class="row" id="buttonsrow">
-      <div  class="col-lg-3 left-column"></div>
       <div class="col center-column" id="buttons">
         <button type="button" class="btn"
                               id="englishbtn">English</button>
@@ -53,9 +39,11 @@
                               id="polishbtn">Polish</button>
       </div>
     </div>
-    <!-- search row -->
-    <div class="row" id="searchrow">
-      <div class="col-lg-3 left-column"></div>
+    <!-- subtitle/search row -->
+    <div class="row" id="secondrow">
+      <div class="col-lg-3 left-column">
+        <h5>A multi-language dictionary</h5>
+      </div>
       <div class="col center-column">
         <form action="/lookup" method="POST" class="input-group form-control-lg">
           <input type="text" class="form-control input-lg" 
