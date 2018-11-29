@@ -105,25 +105,26 @@ textarea {
    ========================================================================== */
 
 .footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  line-height: 60px; /* Vertically center the text there */
-  text-align: center;
-  font-size: 80%;
-  color: #fefdf7;
-  background-color: #134450;
-  background-image: url("../img/noise_pattern.png");
-  background-repeat: repeat;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: 60px;
+	line-height: 60px; /* Vertically center the text there */
+	text-align: center;
+	font-size: 80%;
+	color: #fefdf7;
+	background-color: #134450;
+	background-image: url("../img/noise_pattern.png");
+	background-repeat: repeat;
 }
 
 #firstrow {
-  background-color: #134450;
+	background-color: #134450;
 }
 #secondrow {
-  background-color: #134450;
+	padding: 1em 0 0 0;
+	background-color: #134450;
 }
 #contentrow {
 	margin: 1em 0 0 0;
@@ -188,7 +189,7 @@ textarea {
     border-color: #fefdf7;
 	background-color: #134450;
 	color: #fefdf7;
-	
+}
 
 
 
