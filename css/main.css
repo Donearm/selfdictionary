@@ -123,7 +123,7 @@ textarea {
 	background-color: #134450;
 }
 #secondrow {
-	padding: 1em 0 0 0;
+	padding: 1em 0 1em 0;
 	background-color: #134450;
 }
 #contentrow {
@@ -149,6 +149,7 @@ textarea {
 #englishbtn, #spanishbtn, #portuguesebtn, #germanbtn, #polishbtn {
 	color: #134450;
 	background-color: #fefdf7;
+	margin: 0 0.3em 0 0.3em;
 }
 #englishbtn:hover, #englishbtn:focus {
 	border-color: #ff0000;
