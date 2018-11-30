@@ -13,6 +13,7 @@
 
   <link rel="preload" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/imagehover.min.css">
 </head>
 <body>
   <!--[if lte IE 9]>
@@ -42,7 +43,13 @@
     <!-- subtitle/search row -->
     <div class="row" id="secondrow">
       <div class="col-lg-3 left-column">
-        <h5>A multi-language dictionary</h5>
+        <figure class="imghvr-flip-horiz"><h5>A multi-language to 
+            italian dictionary</h5>
+          <figcaption>
+            Note: all translations are in italian, as this is my native
+            language and the one I feel more comfortable in
+          </figcaption>
+        </figure>
       </div>
       <div class="col center-column">
         <form action="/lookup" method="POST" class="input-group">
@@ -59,9 +66,6 @@
     <!-- content row -->
     <div class="row" id="contentrow">
       <div class="col-lg-3 left-column">
-        <p>Note: all translations are in italian, as this is my native
-        language and the one, obviously, I feel more comfortable
-        in.</p>
       </div>
       <div class="col center-column" id="content"></div>
     </div>

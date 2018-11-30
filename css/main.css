@@ -104,6 +104,11 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+[class^="imghvr-"] figcaption, figure {
+	background-color: rgba(19, 68, 80, 1) !important;
+	padding: 0 !important;
+}
+
 .footer {
 	position: fixed;
 	bottom: 0;
