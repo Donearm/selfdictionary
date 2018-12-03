@@ -56,6 +56,6 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.post("/lookup", function(req, res) {
-	res.send({message: "You were looking on the dictionary"});
+	res.send(req.body.term);
 });
 
