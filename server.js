@@ -12,16 +12,18 @@ const config = require('./config');
 // Establish a mongodb connection using settings from the config.js file
 const dburl = `mongodb://${config.db.host}/${config.db.name}`;
 
-MongoClient.connect(dburl, { useNewUrlParser: true }, function(err, client) {
-	if (err) return console.error(err);
+const connectToDb = function() {
+	MongoClient.connect(dburl, { useNewUrlParser: true }, function(err, client) {
+		if (err) return console.error(err);
 
-	console.log("Connection to DB done");
-	db = client.db("dictionary");
-	findTranslation(db, "Deutsch", "forderungen", function() {
-		client.close();
+		console.log("Connection to DB done");
+		db = client.db("dictionary");
+		findTranslation(db, "Deutsch", "forderungen", function() {
+			client.close();
+		});
+
 	});
-
-});
+}
 
 // Look up a word in the dictionary db
 // 3 parameters, db = database, coll = collection name, term = the 
@@ -57,5 +59,6 @@ app.use(bodyParser.urlencoded({
 
 app.post("/lookup", function(req, res) {
 	res.send(req.body.term);
+	connectToDb();
 });
 
