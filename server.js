@@ -30,19 +30,19 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.post("/lookup", function(req, res) {
-	res.send(req.body.term);
+	const term = req.body.term;
 	MongoClient.connect(dburl, { useNewUrlParser: true }, function(err, client) {
 		if (err) return console.error(err);
 
 		console.log("Connection to DB done");
 		db = client.db("dictionary");
-		db.collection("Deutsch").find({'Word': req.body.term}).toArray(function(err, docs) {
+		db.collection("Deutsch").find({'Word': term}).toArray(function(err, docs) {
 			assert.equal(err, null);
 			console.log("Found the following results: ");
 			console.log(docs);
-			res.write(docs);
+			res.setHeader("Content-Type", "text/plain");
+			res.send(docs);
 			res.end();
-			cb(docs);
 		});
 	});
 });
