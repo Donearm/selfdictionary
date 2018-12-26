@@ -3,11 +3,11 @@ const bodyParser = require("body-parser");
 const app = express();
 const validator = require("validator");
 const assert = require("assert");
-const mongo = require('mongodb');
 
-const MongoClient = require("mongodb").MongoClient;
-
+// Load config
 const config = require('./config');
+// Load database logic
+const db = require('./db');
 
 // Establish a mongodb connection using settings from the config.js file
 const dburl = `mongodb://${config.db.host}/${config.db.name}`;
@@ -31,7 +31,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.post("/lookup", function(req, res) {
-	const term = req.body.term; 
+	const term = req.body.term;
 	if (!validator.isLength(term, { min: 2 })) {
 		res.status(400);
 		return res.send("Word to look up should be at least 2 characters long");
@@ -39,19 +39,16 @@ app.post("/lookup", function(req, res) {
 		res.status(400);
 		return res.send("Only alphanumeric characters are accepted");
 	} else {
-		MongoClient.connect(dburl, { useNewUrlParser: true }, function(err, client) {
-			if (err) return console.error(err);
-
-			console.log("Connection to DB done");
-			db = client.db("dictionary");
-			db.collection("Deutsch").find({'Word': term}).toArray(function(err, docs) {
-				assert.equal(err, null);
-				console.log("Found the following results: ");
-				console.log(docs);
+		db.searchForWord(dburl, "Deutsch", term, function(err, data) {
+			if (err) {
+				console.log(err);
+				return res.send(err);
+			} else {
+				console.log(data);
 				res.setHeader("Content-Type", "text/plain");
-				res.send(docs);
-				res.end();
-			});
+				res.send(data);
+				return res.end();
+			}
 		});
 	}
 });
