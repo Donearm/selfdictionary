@@ -1,5 +1,7 @@
 # selfdictionary
 
+Personal multilanguage dictionary. Work in progress.
+
 ## License
 
 GPLv3 © Gianluca Fiore
