@@ -29,20 +29,21 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
 	extended: true,
 }));
+app.use(express.json());
 
 app.post("/lookup", function(req, res) {
 	const term = req.body.term;
 	if (!validator.isLength(term, { min: 2 })) {
 		res.status(400);
-		return res.send("Word to look up should be at least 2 characters long");
+		return res.send({ "error": "Word to look up should be at least 2 characters long" });
 	} else if (!validator.isAlpha(term)) {
 		res.status(400);
-		return res.send("Only alphanumeric characters are accepted");
+		return res.send({ "error": "Only alphanumeric characters are accepted" });
 	} else {
 		db.searchForWord(dburl, "Deutsch", term, function(err, data) {
 			if (err) {
 				console.log(err);
-				return res.send(err);
+				return res.send({ "error": err });
 			} else {
 				console.log(data);
 				res.setHeader("Content-Type", "text/plain");
