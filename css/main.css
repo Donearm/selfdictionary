@@ -150,12 +150,11 @@ textarea {
 /* Button styling */
 
 #buttons {
-	margin-top: 20px;
+	margin: 20px 0 0 20px;
 }
 #englishbtn, #spanishbtn, #portuguesebtn, #germanbtn, #polishbtn {
 	color: #134450;
 	background-color: #fefdf7;
-	margin: 0 0.3em 0 0.3em;
 }
 #englishbtn:hover, #englishbtn:focus {
 	border-color: #ff0000;
