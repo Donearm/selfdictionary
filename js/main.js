@@ -15,7 +15,11 @@ function showTranslation(language) {
 	// Get the term in the text form
 	let term = $("#term").serializeArray();
 	if (!language) {
+
 		$('#content').text("No language set. Please choose the language you're looking to translate from");
+		setTimeout(function() {
+			$('#content').text('');
+		}, 2000);
 		return false
 	}
 	term[0].lang = language;
