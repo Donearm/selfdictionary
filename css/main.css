@@ -139,6 +139,7 @@ textarea {
 
 .left-column {
 	font-size: 85%;
+	min-width: 30%;
 }
 .center-column { }
 
