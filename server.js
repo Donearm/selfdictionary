@@ -34,6 +34,8 @@ app.use(express.json());
 
 app.post("/lookup", function(req, res) {
 	const term = req.body.term;
+	res.setHeader("Content-Type", "application/json");
+
 	if (!validator.isLength(term, { min: 2 })) {
 		res.status(400);
 		return res.send({ "error": "Word to look up should be at least 2 characters long" });
@@ -47,8 +49,7 @@ app.post("/lookup", function(req, res) {
 				return res.send({ "error": err });
 			} else {
 				console.log(data);
-				res.setHeader("Content-Type", "text/plain");
-				res.send(data);
+				res.send(JSON.stringify({ "translation": data }));
 				return res.end();
 			}
 		});
