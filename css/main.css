@@ -157,31 +157,31 @@ textarea {
 	color: #134450;
 	background-color: #fefdf7;
 }
-#englishbtn:hover, #englishbtn:focus {
-	border-color: #ff0000;
-	background-color: #fefdf7;
-	color: #ff0000;
-	text-shadow: 0.5px 0.5px red;
+#englishbtn:hover, #englishbtn:focus, #englishbtn:active, #englishbtn:active:focus, #englishbtn.active {
+	border-color: #fefdf7;
+	background-color: #ff0000;
+	color: #fefdf7;
+	text-shadow: 0.5px 0.5px white;
 }
-#spanishbtn:hover, #spanishbtn:focus {
+#spanishbtn:hover, #spanishbtn:focus, #spanishbtn:active, #spanishbtn:active:focus, #spanishbtn.active {
     border-color: #aa151b;
 	background-color: #F1BF00;
     color: #aa151b;
 	text-shadow: 0.5px 0.5px red;
 }
-#portuguesebtn:hover, #portuguesebtn:focus {
+#portuguesebtn:hover, #portuguesebtn:focus, #portuguesebtn:active, #portuguesebtn:active:focus, #portuguesebtn.active {
     border-color: #ff0000;
 	background-color: #006600;
     color: #ff0000;
 	text-shadow: 0.5px 0.5px red;
 }
-#germanbtn:hover, #germanbtn:focus {
+#germanbtn:hover, #germanbtn:focus, #germanbtn:active, #germanbtn:active:focus, #germanbtn.active {
     border-color: #ffcc00;
 	background-color: #ff0000;
     color: #000000;
 	text-shadow: 0.5px 0.5px black;
 }
-#polishbtn:hover, #polishbtn:focus {
+#polishbtn:hover, #polishbtn:focus, #polishbtn:active, #polishbtn:active:focus, #polishbtn.active {
     border-color: #ff0000;
 	background-color: #ff0000;
     color: #fefdf7;
