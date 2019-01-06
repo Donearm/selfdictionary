@@ -158,9 +158,9 @@ textarea {
 	background-color: #fefdf7;
 }
 #englishbtn:hover, #englishbtn:focus, #englishbtn:active, #englishbtn:active:focus, #englishbtn.active {
-	border-color: #fefdf7;
-	background-color: #ff0000;
-	color: #fefdf7;
+	border-color: #012169;
+	background-color: #012169;
+	color: #ffffff;
 	text-shadow: 0.5px 0.5px white;
 }
 #spanishbtn:hover, #spanishbtn:focus, #spanishbtn:active, #spanishbtn:active:focus, #spanishbtn.active {
